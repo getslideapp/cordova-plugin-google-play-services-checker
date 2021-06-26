@@ -15,8 +15,8 @@
 
     <!-- android -->
     <platform name="android">
-        <preference name="GOOGLE_PLAY_SERVICES_VERSION" default="17.+"/>
-        <framework src="com.google.android.gms:play-services-location:$GOOGLE_PLAY_SERVICES_VERSION"/>
+        <framework src="com.google.android.gms:play-services-gcm:+"/>
+        <!-- <framework src="com.huawei.hms:play-services-gcm:+"/> -->
         <config-file target="res/xml/config.xml" parent="/*">
             <feature name="GooglePlayServicesChecker">
                 <param name="android-package" value="com.dinamexoft.googleplayserviceschecker.GooglePlayServicesChecker"/>
